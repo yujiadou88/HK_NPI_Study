@@ -9,7 +9,7 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 source("../NPImain_scripts/Analyzed_hh.r")
 
 table3 <- matrix(rep(NA,78),ncol=13,byrow=FALSE)

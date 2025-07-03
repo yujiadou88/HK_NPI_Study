@@ -10,10 +10,12 @@
 # Last updated by Vicky Fang and Ben Cowling
 # January 5, 2009
 
-dir <- "../data/HongKongNPIpilotV2/"
+dir <- "../data/HongKongNPIpilot/"
 
 qv <- read.csv(paste(dir, "clinicdat_h.csv", sep=""), header=TRUE)
+qv <- qv[,which(names(qv) == "scrID") : which(names(qv) == "antiviral")]
 dat <- read.csv(paste(dir, "hchar_h.csv", sep=""), header=TRUE)
+dat <- dat[,!(names(dat) %in% c("clinic_date","clinic_day"))]
 dat <- merge(dat,qv[,c(2,25)],by="hhID",all.x=TRUE)
 dat$onsettime[dat$onsettime!=5] <- floor(dat$onsettime[dat$onsettime!=5]/2)
 dat$onsettime[dat$onsettime==5] <- 3
@@ -90,3 +92,4 @@ axis(2, at=c(0.5,1.5,2.5,3.5,4.5), labels=c("4","3","2","1","0"), cex.axis=1.5,l
 
 
 # End of script
+

@@ -14,7 +14,7 @@
 #
 # RESULTS | Main outcomes | Overall laboratory-confirmed SAR
 
-dir <- "../data/HongKongNPIpilotV2/"
+dir <- "../data/HongKongNPIpilot/"
 
 hc <- read.csv(paste(dir, "home_culture.csv", sep=""), header=TRUE)
 mark <- data.frame(hhID = unique(baseflu$hhID))

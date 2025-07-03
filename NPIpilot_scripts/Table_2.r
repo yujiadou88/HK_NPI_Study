@@ -15,10 +15,10 @@
 #  2 .. updated data (e.g. transcription errors detected by ongoing data cleaning processes).
 #  3 .. bugs in earlier scripts.
 
-dir <- "../data/HongKongNPIpilotV2/"
+dir <- "../data/HongKongNPIpilot/"
 
 #source the Figure_1 file to avoid repeating some of the data cleaning procedures
-source("../NPI_scripts/Figure_1.r")  
+source("../NPIpilot_scripts/Figure_1.r")  
 
 table2 <- matrix(rep(NA,120),ncol=10,byrow=FALSE)
 baseflu <- baseflu[,1:4]         # hhID, member, age, sex

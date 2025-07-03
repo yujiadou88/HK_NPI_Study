@@ -9,10 +9,11 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 source("../NPImain_scripts/Analyzed_hh.r")
 
 q1data <- read.csv(paste(dir, "clinicdat_h.csv", sep=""))
+q1data <- q1data[,which(names(q1data) == "scrID") : which(names(q1data) == "antiviral")]
 arm <- read.csv(paste(dir, "randomarm_407.csv", sep=""))
 av <- read.csv(paste(dir, "antiviral_m.csv", sep=""))
 

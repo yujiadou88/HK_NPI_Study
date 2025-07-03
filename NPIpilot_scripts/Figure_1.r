@@ -17,12 +17,15 @@
 # 35 allocated to mask arm,
 # 35 allocated to hand hygiene arm
 
-dir <- "../data/HongKongNPIpilotV2/"
+dir <- "../data/HongKongNPIpilot/"
 
 qv <- read.csv(paste(dir, "clinicdat_h.csv", sep=""), header=TRUE)
+qv <- qv[,which(names(qv) == "scrID") : which(names(qv) == "antiviral")]
 hchar <- read.csv(paste(dir, "hchar_h.csv", sep=""), header=TRUE)
+hchar <- hchar[,!(names(hchar) %in% c("clinic_date","clinic_day"))]
 hculture <- read.csv(paste(dir, "home_culture.csv", sep=""), header=TRUE)
 baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""), header=TRUE)
+baseflu <- baseflu[,which(names(baseflu) == "hhID") : which(names(baseflu) == "smallgel_usage")]
 
 # Step 1: Enrolment
 
@@ -91,3 +94,4 @@ sum(hand_als$familysize) - dim(hand_als)[1]                 # Participants
 # made available in the online dataset.
 
 # End of script
+

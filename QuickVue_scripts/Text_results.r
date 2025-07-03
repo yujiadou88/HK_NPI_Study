@@ -9,7 +9,7 @@
 # Last updated by Calvin Cheng and Vicky Fang
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIpilotV3/"
+dir <- "../data/HongKongNPIpilot/"
 
 cdc <- read.csv(paste(dir,"QuickVue_data.csv",sep=""))
 source ("../QuickVue_scripts/add_groups.r")

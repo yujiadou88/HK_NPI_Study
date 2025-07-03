@@ -9,7 +9,7 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 plots <- read.csv(paste(dir, "QV_CHP_QM_rate.csv", sep=""))
 
 months <- rep(0,39)

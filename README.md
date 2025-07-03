@@ -16,13 +16,13 @@ A weakness of our chosen study design is the delay between index case symptom on
 
 The latest version of the NPI study year 1 (pilot) data (02-2007 to 09-2007) are available to download as a zip file here:
 
--   [HongKongNPIpilotV4.zip](data/HongKongNPIpilotV4.zip).
+-   [HongKongNPIpilot.zip](data/HongKongNPIpilot.zip).
 
 This version of the dataset covers the transmission of influenza in households and adherence to interventions, antiviral treatment, quantitative viral loads, and data from recruiting clinics including presenting symptoms and rapid test performance in 2007.
 
 The latest version of the NPI study year 2 data (01-2008 to 09-2008) are available to download as a zip file here:
 
--   [HongKongNPIstudyV4.zip](data/HongKongNPIstudyV4.zip).
+-   [HongKongNPIstudy.zip](data/HongKongNPIstudy.zip).
 
 This version of the dataset covers the transmission of influenza in households and adherence to interventions, antiviral treatment, quantitative viral loads, and data from recruiting clinics including presenting symptoms and rapid test performance in 2008.
 
@@ -44,13 +44,13 @@ All results can be reproduced using these R scripts:
 
 -   [Table 2](NPIpilot_scripts/Table_2.r).
 
--   [Table 3](NPIpilot_scripts/Table_3.r) *(requires R package `gee`)*.
+-   [Table 3](NPIpilot_scripts/Table_3.r) *(requires R package 'gee')*.
 
 -   [Figure 1](NPIpilot_scripts/Figure_1.r).
 
 -   [Figure 2](NPIpilot_scripts/Figure_2.r).
 
--   [Table S1](NPIpilot_scripts/Table_S1.r) *(requires R package `ROCR`)*.
+-   [Table S1](NPIpilot_scripts/Table_S1.r) *(requires R package 'ROCR')*.
 
 -   [Figure S1](NPIpilot_scripts/Figure_S1.r).
 

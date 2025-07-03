@@ -9,9 +9,10 @@
 # Last updated by Vicky Fang and Lincoln Lau
 # Jan 30, 2010
 
-dir <- "../data/HongKongNPIstudyV4/"
+dir <- "../data/HongKongNPIstudy/"
 
-hc <- read.csv(paste(dir, "home_pcr.csv", sep=""))                    
+hc <- read.csv(paste(dir, "home_pcr.csv", sep=""))   
+hc <- hc[,!(names(hc) %in% c("PCR"))]
 baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""))      
 symp <- read.csv(paste(dir, "symptomday_d.csv", sep=""))
 

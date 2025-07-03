@@ -13,10 +13,11 @@
 # make sure you have downloaded the package 'ROCR'
 require(ROCR)
 
-dir <- "../data/HongKongNPIpilotV2/"
+dir <- "../data/HongKongNPIpilot/"
 
 hc <- read.csv(paste(dir, "home_culture.csv", sep=""), header=TRUE)
 baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""), header=TRUE)
+baseflu <- baseflu[,which(names(baseflu) == "hhID") : which(names(baseflu) == "smallgel_usage")]
 tableS1 <- matrix(rep(NA,15),ncol=5,byrow=FALSE)
 
 ####################################################### Lab-confirmed secondary cases ####################################################

@@ -13,8 +13,8 @@
 # Construct the data frame for analysis (n=384 index case in total) (n=331 analyzed hhs)
 #
 
-dir.pilot <- "../data/HongKongNPIpilotV4/"
-dir.main <- "../data/HongKongNPIstudyV4/"
+dir.pilot <- "../data/HongKongNPIpilot/"
+dir.main <- "../data/HongKongNPIstudy/"
 
 clinic.pilot <- read.csv(paste(dir.pilot,"clinicdat_h.csv", sep=""))
 clinic.main <- read.csv(paste(dir.main,"clinicdat_h.csv", sep=""))
@@ -28,6 +28,7 @@ clinic <- rbind(clinic.pilot[c("hhID","male","age","self_fever","headache","sthr
 
 hc.pilot <- read.csv(paste(dir.pilot, "home_culture_qPCR.csv", sep=""),as.is=T)
 hc.main <- read.csv(paste(dir.main, "home_pcr.csv", sep=""))
+hc.main <- hc.main[,!(names(hc.main) %in% c("PCR"))]
 hc.pilot$hhID <-  as.numeric(substr(hc.pilot$hhID,3,6))
 hc.main$hhID <- hc.main$hhID+8000
 hc.pilot$culture <- 1*(hc.pilot$culture>0)

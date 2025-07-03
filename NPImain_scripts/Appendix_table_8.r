@@ -9,15 +9,18 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 
 # Analyzed households: all 331 households
 
 appt8 <- matrix(rep(NA,190),ncol=10,byrow=FALSE)
 
 hc <- read.csv(paste(dir, "home_pcr.csv", sep=""))
-housechar <- read.csv(paste(dir, "hchar_h.csv", sep=""))       
-baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""))      
+hc <- hc[,!(names(hc) %in% c("qPCR","q_culture","sub.type"))]
+housechar <- read.csv(paste(dir, "hchar_h.csv", sep=""))   
+housechar <- housechar[,-which(names(housechar) == "clinic_date")]
+baseflu <- read.csv(paste(dir, "adherence_m.csv", sep="")) 
+baseflu <- baseflu[,which(names(baseflu) == "hhID") : which(names(baseflu) == "smallgel_remain")]
 symptom <- read.csv(paste(dir, "symptomday_d.csv", sep=""))
 
 ### Lab-confirmed secondary cases

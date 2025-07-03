@@ -10,7 +10,7 @@
 # Jan 30, 2010
 
 
-dir <- "../data/HongKongNPIstudyV4/"
+dir <- "../data/HongKongNPIstudy/"
 source("../vshed_scripts/JID_dataframe.r")
 clinic <- read.csv(paste(dir, "clinicdat_h.csv", sep=""))
 

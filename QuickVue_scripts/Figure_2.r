@@ -9,7 +9,7 @@
 # Last updated by Calvin Cheng and Vicky Fang
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIpilotV3/"
+dir <- "../data/HongKongNPIpilot/"
 
 cdc <- read.csv(paste(dir,"QuickVue_data.csv",sep=""))
 source ("../QuickVue_scripts/add_groups.r")
@@ -73,6 +73,7 @@ mtext("Neg" ,side=1,at=7, line=1)
 mtext("Pos B",side=1,at=8.5, line=1)
 
 mtext("Negative",  side=1, at=2-1.5, line=2.5)
+marg <- 3
 mtext("Influenza A", side=1, at=6.75-marg, line=2.5)
 mtext("Influenza B", side=1, at=10.75-marg, line=2.5)
 

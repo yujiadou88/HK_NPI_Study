@@ -11,11 +11,14 @@
 
 # Analyzed households: no co-index, index confirmed +ve at baseline
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 
 hc <- read.csv(paste(dir, "home_pcr.csv", sep=""))
-housechar <- read.csv(paste(dir, "hchar_h.csv", sep=""))                       
-baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""))      
+hc <- hc[,!(names(hc) %in% c("qPCR","q_culture","sub.type"))]
+housechar <- read.csv(paste(dir, "hchar_h.csv", sep="")) 
+housechar <- housechar[,-which(names(housechar) == "clinic_date")]
+baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""))
+baseflu <- baseflu[,which(names(baseflu) == "hhID") : which(names(baseflu) == "smallgel_remain")]
 
 # Households followed up and the family members
 

@@ -9,6 +9,9 @@
 # August 20, 2014
 #
 
+# change: run dataframe.r to derive hkdata
+source("../NPI_PLoSOne_motB_scripts/dataframe.r")
+
 
 #### mcmc functionlogprior = function(current)
 logprior = function(current)
@@ -168,7 +171,7 @@ library("fields")
 
 windows(width=4,height=4)
 par(mar=c(4,5,2,0))
-contour(predict.surface(Tps(as.matrix(expand.grid(x=r1,y=r2)),as.vector(hkb))),
+contour(predictSurface(Tps(as.matrix(expand.grid(x=r1,y=r2)),as.vector(hkb))),
         labcex=1,main="Hong Kong",axes=F,levels=1:10/10,
         labels=c("10%","20%","30%","40%","50%","60%","70%","80%","90%","100%"))
 axis(1,at=0:5/5,labels=c("0%","20%","40%","60%","80%","100%"))

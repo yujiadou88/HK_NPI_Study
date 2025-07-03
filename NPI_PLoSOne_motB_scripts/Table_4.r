@@ -141,7 +141,7 @@ mcmc=function(data,MCMC_iterations=1000,BURNIN_iterations=100,THINNING=1)
 # Run the MCMC iteration
 set.seed(12345)
 iter=100000;burnin=iter/5;thin=10   # could change the number of iterations and burn-in here
-a <- mcmc(bkdata,iter,burnin,THINNING=1)
+a <- mcmc(hkdata,iter,burnin,THINNING=1) 
 round(colMeans(a$accept,na.rm=T),2)
 hkres <- cbind(a$phi,a$lambda1,a$lambda2,a$lambda3,a$pi1,a$pi2,a$pi3,a$theta.a,a$theta.c)
 

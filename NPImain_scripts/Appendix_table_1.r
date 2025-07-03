@@ -9,11 +9,13 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 source("../NPImain_scripts/Analyzed_hh.r")
 
 dat <- read.csv(paste(dir, "hchar_h.csv", sep=""))
+dat <- dat[,-which(names(dat) == "clinic_date")]
 clinic <- read.csv(paste(dir, "clinicdat_h.csv", sep=""))
+clinic <- clinic[,which(names(clinic) == "scrID") : which(names(clinic) == "antiviral")]
 dat$analyzed <- hculture$analyzed[hculture$member==0]
 dat <- merge(dat,clinic[c("hhID","onsettime")],by="hhID",all.x=TRUE)
 dat$onsettime <- dat$onsettime*12

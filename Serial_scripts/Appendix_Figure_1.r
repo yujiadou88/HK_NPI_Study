@@ -9,10 +9,11 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Feburary 2, 2009
 
-dir <- "../data/HongKongNPIpilotV2/"
+dir <- "../data/HongKongNPIpilot/"
 
 hc <- read.csv(paste(dir, "home_culture.csv", sep=""), header=TRUE)
 baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""), header=TRUE)
+baseflu <- baseflu[,which(names(baseflu) == "hhID") : which(names(baseflu) == "smallgel_usage")]
 
 ###---------------------------------------------------- Lab-confirmed secondary cases ------------------------------------------------###
 
@@ -67,7 +68,9 @@ for (i in 1:nrow(hculture)){
 ###
 
 visitday <- read.csv(paste(dir, "hchar_h.csv", sep=""), header=TRUE)
+visitday <- visitday[,!(names(visitday) %in% c("clinic_date","clinic_day"))]
 cdat <- read.csv(paste(dir, "clinicdat_h.csv", sep=""), header=TRUE)
+cdat <- cdat[,which(names(cdat) == "scrID") : which(names(cdat) == "antiviral")]
 lab <- hculture
 
 visitday <- merge(visitday,cdat[,c(2,25)],by="hhID",all.x=TRUE)   # hhID, onsettime

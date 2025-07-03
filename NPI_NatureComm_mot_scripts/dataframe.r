@@ -16,9 +16,10 @@
 
 
 source("../NPImain_scripts/Analyzed_hh.r")
-dir <- "../data/HongKongNPIstudyV4/"
+dir <- "../data/HongKongNPIstudy/"
 hchar <- read.csv(paste(dir, "hchar_h.csv", sep=""))
 hc <- read.csv(paste(dir, "home_pcr.csv", sep=""))
+hc <- hc[,!(names(hc) %in% c("PCR"))]
 clinic <- read.csv(paste(dir, "clinicdat_h.csv", sep=""))
 demog <- read.csv(paste(dir, "adherence_m.csv", sep=""))
 symp <- read.csv(paste(dir, "symptomday_d.csv", sep=""))
@@ -75,7 +76,7 @@ cr <- merge(cr,demog[c("hhID","member","age")],by=c("hhID","member"),all.x=T)
 # NPI 2009 winter data
 #
 
-dir <- "http://sph.hku.hk/data/HongKongNPIstudy2009V1/"
+dir <- "../data/HongKongNPIstudy2009V1/"
 hc <- read.csv(paste(dir, "qPCR.csv", sep=""))
 demog <- read.csv(paste(dir, "demog_m.csv", sep=""))
 hchar <- read.csv(paste(dir, "hchar_h.csv", sep=""))

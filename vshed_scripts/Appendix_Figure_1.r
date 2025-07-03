@@ -8,7 +8,7 @@
 # Last updated by Vicky Fang and Lincoln Lau
 # Jan 30, 2010
 
-dir <- "../data/HongKongNPIstudyV4/"
+dir <- "../data/HongKongNPIstudy/"
 source("../vshed_scripts/JID_dataframe.r")
 
 hchar <- read.csv(paste(dir, "hchar_h.csv", sep=""))

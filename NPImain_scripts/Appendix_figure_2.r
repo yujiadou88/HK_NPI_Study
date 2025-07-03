@@ -9,7 +9,7 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 source("../NPImain_scripts/Analyzed_hh.r")
 analyzed <- hculture[hculture$member==0,c("hhID","analyzed")]
 

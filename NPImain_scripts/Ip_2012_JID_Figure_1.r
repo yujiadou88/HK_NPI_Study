@@ -12,8 +12,9 @@
 require(nlme)
 
 source("../NPImain_scripts/Analyzed_hh.r")
-dir <- "../data/HongKongNPIstudyV4/"
+dir <- "../data/HongKongNPIstudy/"
 hc <- read.csv(paste(dir, "home_pcr.csv", sep=""))
+hc <- hc[,!(names(hc) %in% c("PCR"))]
 hchar <- read.csv(paste(dir, "hchar_h.csv", sep=""))
 baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""))
 clinic <- read.csv(paste(dir, "clinicdat_h.csv", sep=""))

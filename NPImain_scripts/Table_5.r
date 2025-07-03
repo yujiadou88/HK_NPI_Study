@@ -9,7 +9,7 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 source("../NPImain_scripts/Analyzed_hh.r")
 
 ###-----------------------------------------------Lab-confirmed secondary cases --------------------------------------------------------###
@@ -27,6 +27,7 @@ for (i in 1:nrow(hculture)){
 ###################### Get arm, index agegp, sex index, vaccine contact, contact sex, contact agegp ##################################
 
 baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""))
+baseflu <- baseflu[,which(names(baseflu) == "hhID") : which(names(baseflu) == "smallgel_remain")]
 av <- read.csv(paste(dir, "antiviral_m.csv", sep=""))
 
 ### Add variable 'vaccine' <- 1 if the subject received vaccination in past one year

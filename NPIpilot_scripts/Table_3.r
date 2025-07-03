@@ -18,10 +18,11 @@
 # make sure you have downloaded the package 'gee'
 require(gee)
 
-dir <- "../data/HongKongNPIpilotV2/"
+dir <- "../data/HongKongNPIpilot/"
 
 hc <- read.csv(paste(dir, "home_culture.csv", sep=""), header=TRUE)
 baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""), header=TRUE)
+baseflu <- baseflu[,which(names(baseflu) == "hhID") : which(names(baseflu) == "smallgel_usage")]
 
 ###---------------------------------------------------- Lab-confirmed secondary cases ------------------------------------------------###
 
@@ -79,7 +80,9 @@ for (i in 1:nrow(hculture)){
 ###################### Get arm, index agegp, sex index, vaccine contact, contact sex, contact agegp ##################################
 
 qv <- read.csv(paste(dir, "clinicdat_h.csv", sep=""), header=TRUE)
+qv <- qv[,which(names(qv) == "scrID") : which(names(qv) == "antiviral")]
 hchar <- read.csv(paste(dir, "hchar_h.csv", sep=""), header=TRUE)
+hchar <- hchar[,!(names(hchar) %in% c("clinic_date","clinic_day"))]
 
 ### Add variable 'vaccine' <- 1 if the subject received vaccination in any of the past 1 year
 for ( i in 1:nrow(hculture)){

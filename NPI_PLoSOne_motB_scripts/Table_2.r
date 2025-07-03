@@ -11,8 +11,8 @@
 
 source("../NPI_PLoSOne_motB_scripts/dataframe.r")
 
-demog1 <- read.csv("../data/HongKongNPIstudyV4/adherence_m.csv")
-hchar1 <- read.csv("../data/HongKongNPIstudyV4/hchar_h.csv")
+demog1 <- read.csv("../data/HongKongNPIstudy/adherence_m.csv")
+hchar1 <- read.csv("../data/HongKongNPIstudy/hchar_h.csv")
 demog2 <- read.csv("../data/HongKongNPIstudy2009V1/demog_m.csv")
 hchar2 <- read.csv("../data/HongKongNPIstudy2009V1/hchar_h.csv")
 

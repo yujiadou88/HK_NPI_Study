@@ -9,9 +9,10 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 source("../NPImain_scripts/Analyzed_hh.r")
 aftervisit <- read.csv(paste(dir, "adherence_m.csv", sep=""))
+aftervisit <- aftervisit[,which(names(aftervisit) == "hhID") : which(names(aftervisit) == "smallgel_remain")]
 
 # Proportion of subjects who report wash hand/wear mask often/always during the f/u period - according to Q4
 

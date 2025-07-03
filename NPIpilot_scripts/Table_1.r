@@ -11,9 +11,10 @@
 # January 5, 2009
 
 
-dir <- "../data/HongKongNPIpilotV2/"
+dir <- "../data/HongKongNPIpilot/"
 
 q1data <- read.csv(paste(dir, "clinicdat_h.csv", sep=""), header=TRUE)
+q1data <- q1data[,which(names(q1data) == "scrID") : which(names(q1data) == "antiviral")]
 intervention <- read.csv(paste(dir, "randomarm_198.csv", sep=""), header=TRUE)
 
 table1p1 <- matrix(rep(NA,180),ncol=12,byrow=FALSE)

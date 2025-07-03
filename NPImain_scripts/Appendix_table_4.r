@@ -9,9 +9,10 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 source("../NPImain_scripts/Analyzed_hh.r")
 cdat <- read.csv(paste(dir, "clinicdat_h.csv", sep=""))
+cdat <- cdat[,which(names(cdat) == "scrID") : which(names(cdat) == "antiviral")]
 
 appt4 <- matrix(rep(NA,60),ncol=10,byrow=FALSE)
 

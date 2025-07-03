@@ -9,10 +9,11 @@
 # Last updated by Vicky Fang and Ben Cowling
 # Sep 08, 2009
 
-dir <- "../data/HongKongNPIstudyV3/"
+dir <- "../data/HongKongNPIstudy/"
 source("../NPImain_scripts/Analyzed_hh.r")
 
 q1data <- read.csv(paste(dir, "clinicdat_h.csv", sep=""))
+q1data <- q1data[,which(names(q1data) == "scrID") : which(names(q1data) == "antiviral")]
 intervention <- read.csv(paste(dir, "randomarm_407.csv", sep=""))
 av <- read.csv(paste(dir, "antiviral_m.csv", sep=""))
 
@@ -70,6 +71,7 @@ table2p1[c(1:5,7:19),10] <- round(as.numeric(table2p1[c(1:5,7:19),9])/nrow(tab2_
 ####################################### Part 1-2: For 259 analyzed index subjects #######################################
 
 hchar <- read.csv(paste(dir, "hchar_h.csv", sep=""))
+hchar <- hchar[,-which(names(hchar) == "clinic_date")]
 
 hchar$analyzed <- hculture$analyzed[hculture$member==0]
 hchar <- merge(hchar,q1data[c(2,12)],by="hhID",all.x=TRUE)
@@ -139,6 +141,7 @@ table2p1
 ####################################### Part 2: For contacts in 259 analyzed households ################################################
 
 baseflu <- read.csv(paste(dir, "adherence_m.csv", sep=""))
+baseflu <- baseflu[,which(names(baseflu) == "hhID") : which(names(baseflu) == "smallgel_remain")]
 
 demog <- baseflu[1:4] # hhID, member, age, sex
 demog$vaccine <- baseflu$vaccine08
