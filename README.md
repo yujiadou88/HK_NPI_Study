@@ -268,10 +268,9 @@ Publication of anonymised raw data has been approved by our local IRB and fundin
 
 5.  Ng S, Cowling BJ, Fang VJ, Chan KH, Ip DKM, Cheng CKY, Uyeki TM, Houck PM, Peiris JSM, Leung GM. Effects of oseltamivir treatment on duration of clinical illness and viral shedding, and household transmission of influenza virus. *Clinical Infectious Diseases*, 2010; **50**(5):707-14. [[link]](http://www.journals.uchicago.edu/doi/full/10.1086/650458) [[PubMed]](http://www.ncbi.nlm.nih.gov/pubmed/20121573).
 
-6.  Lau LLH, Cowling BJ, Fang VJ, Chan KH, Lau EHY, Lipsitch M, Cheng CKY, Mouck PM, Uyeki TM, Peiris JSM, Leung GM. Viral shedding and clinical illness in naturally acquired influenza virus\
-    infections. *Journal of Infectious Diseases*, 2010; 201:1509-16. [[link]](http://dx.doi.org/10.1086/652241) [[PubMed]](http://www.ncbi.nlm.nih.gov/pubmed/20377412).
+6.  Lau LLH, Cowling BJ, Fang VJ, Chan KH, Lau EHY, Lipsitch M, Cheng CKY, Mouck PM, Uyeki TM, Peiris JSM, Leung GM. Viral shedding and clinical illness in naturally acquired influenza virus infections. *Journal of Infectious Diseases*, 2010; 201:1509-16. [[link]](http://dx.doi.org/10.1086/652241) [[PubMed]](http://www.ncbi.nlm.nih.gov/pubmed/20377412).
 
-7.  Lau LLH, Ip DKM, Nishiura H, Fang VJ, Chan KH, Peiris JSM, Leung GM, Cowling BJ. Heterogeneity in virus shedding among medically-attended influenza A virus infections. *Journal of Infectious Diseases*, 2013 (in press).
+7.  Lau LLH, Ip DKM, Nishiura H, Fang VJ, Chan KH, Peiris JSM, Leung GM, Cowling BJ. Heterogeneity in viral shedding among individuals with medically attended influenza A virus infection. *Journal of Infectious Diseases*, 2013; **207**(8):1281–1285. [[link]](https://academic.oup.com/jid/article/207/8/1281/891314) [[Pubmed]](https://pubmed.ncbi.nlm.nih.gov/23382573/).
 
 ## Acknowledgements
 
