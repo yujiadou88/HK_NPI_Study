@@ -238,7 +238,7 @@ We have a series of further analyses underway using the data from our study. Mor
 
 ## Authors and investigators
 
-The principal investigators of this study are Gabriel Leung and [Ben Cowling](https://sph.hku.hk/en/Biography/Cowling-Benjamin-John). The full list of investigators is given in our study protocol (linked in [section 1](#study-overview)). The data were uploaded by [Ben Cowling](https://sph.hku.hk/en/Biography/Cowling-Benjamin-John), and the scripts were written by Vicky Fang and [Ben Cowling](https://sph.hku.hk/en/Biography/Cowling-Benjamin-John).
+The principal investigators of this study are Gabriel Leung and [Ben Cowling](https://sph.hku.hk/en/Biography/Cowling-Benjamin-John). The full list of investigators is given in our study protocol (linked in section 1). The data were uploaded by [Ben Cowling](https://sph.hku.hk/en/Biography/Cowling-Benjamin-John), and the scripts were written by Vicky Fang and [Ben Cowling](https://sph.hku.hk/en/Biography/Cowling-Benjamin-John).
 
 ## A comment on reproducible research
 
