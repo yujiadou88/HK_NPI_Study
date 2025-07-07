@@ -1,6 +1,6 @@
 # Hong Kong NPI study
 
-## 1. Study overview {#study-overview}
+## 1. Study overview 
 
 There is a serious deficit in the evidence base on whether non-pharmaceutical interventions can reduce the spread of influenza. We implemented a study of whether face masks and hand hygiene can reduce influenza transmission among Hong Kong household members.
 
