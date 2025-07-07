@@ -44,7 +44,7 @@ c(dim(tab1_c)[1],dim(tab1_h)[1],dim(tab1_m)[1])
 hchar <- read.csv(paste(dir, "hchar_h.csv", sep=""))
 hchar$analyzed <- hculture$analyzed[hculture$member==0]
 
-hchar$delay <- hchar$onset_v1_delay-hchar$onsettime
+# hchar$delay <- hchar$onset_v1_delay-hchar$onsettime
 hchar <- hchar[c(1,2,3,10,11)] # hhID, intervention, hhsize, analyzed, delay
 tab1.2 <- merge(tab1[-3],hchar,by="hhID")
 
