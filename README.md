@@ -1,6 +1,6 @@
 # Hong Kong NPI study
 
-## 1. Study overview 
+## 1. Study overview
 
 There is a serious deficit in the evidence base on whether non-pharmaceutical interventions can reduce the spread of influenza. We implemented a study of whether face masks and hand hygiene can reduce influenza transmission among Hong Kong household members.
 
@@ -176,7 +176,7 @@ Results described in Ng et al. (2010) are reproduced in the following scripts wh
 
 In acute influenza virus infections most viral shedding occurs within a few days of illness onset, and the degree of viral shedding correlates with symptoms and tympanic temperature.
 
-Results described in [Lau et al. (2010, JID)](http://dx.doi.org/10.1086/652241 "full text of Lau et al., 2010, JID") are reproduced in the following scripts which can be run in [R](http://www.r-project.org "R statistical software homepage"):
+Results described in [Lau et al. (2010, JID)](http://dx.doi.org/10.1086/652241) are reproduced in the following scripts which can be run in [R](http://www.r-project.org "R statistical software homepage"):
 
 -   [scripts](vshed_scripts/JID_dataframe.r) to reformat the raw data (used in some of the other scripts here).
 
@@ -204,7 +204,7 @@ Results described in the manuscript are reproduced in the following scripts whic
 
 Influenza A viruses are believed to spread between humans through contact, large respiratory droplets and small particle droplet nuclei (aerosols), but the relative importance of each of these modes of transmission is unclear. Cowling and colleagues modelled data of 822 subjects recruited from NPI study 2008-2009 to estimate that aerosol transmission accounts for approximately half of all influenza transmission events.
 
-Results described in the manuscript are reproduced in the following scripts which can be run in [R](http://www.r-project.org "R statistical software homepage"):
+Results described in [Cowling et al. (2013, Nat Commun)](https://www.nature.com/articles/ncomms2922) are reproduced in the following scripts which can be run in [R](http://www.r-project.org "R statistical software homepage"):
 
 -   [scripts](NPI_NatureComm_mot_scripts/dataframe.r) to reformat the raw data (used in some of the other scripts here).
 
@@ -214,13 +214,11 @@ Results described in the manuscript are reproduced in the following scripts whic
 
 -   [Figure 2](NPI_NatureComm_mot_scripts/Figure_2.r).
 
-\*Scripts for results presented in Supplementary file will be uploaded soon.
-
 ## 10B. Modes of transmission of influenza B virus in household
 
 Continued with the above study on influenza A, we further explore the modes of transmission of influenza B virus based on the same household settings. We found aerosol transmission may be an important mode of spread of influenza B virus. The point estimates of aerosol transmission were slightly lower for influenza B virus compared to previously published estimates for influenza A virus in both Hong Kong and Bangkok.
 
-Results described in the manuscript are reproduced in the following scripts which can be run in [R](http://www.r-project.org "R statistical software homepage"):
+Results described in [Cowling et al. (2014, PLoS ONE)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0108850) are reproduced in the following scripts which can be run in [R](http://www.r-project.org "R statistical software homepage"):
 
 -   [scripts](NPI_PLoSOne_motB_scripts/dataframe.r) to reformat the raw data (used in some of the other scripts here).
 
@@ -268,9 +266,13 @@ Publication of anonymised raw data has been approved by our local IRB and fundin
 
 5.  Ng S, Cowling BJ, Fang VJ, Chan KH, Ip DKM, Cheng CKY, Uyeki TM, Houck PM, Peiris JSM, Leung GM. Effects of oseltamivir treatment on duration of clinical illness and viral shedding, and household transmission of influenza virus. *Clinical Infectious Diseases*, 2010; **50**(5):707-14. [[link]](https://doi.org/10.1086/650458) [[PubMed]](http://www.ncbi.nlm.nih.gov/pubmed/20121573).
 
-6.  Lau LLH, Cowling BJ, Fang VJ, Chan KH, Lau EHY, Lipsitch M, Cheng CKY, Mouck PM, Uyeki TM, Peiris JSM, Leung GM. Viral shedding and clinical illness in naturally acquired influenza virus infections. *Journal of Infectious Diseases*, 2010; 201:1509-16. [[link]](http://dx.doi.org/10.1086/652241) [[PubMed]](http://www.ncbi.nlm.nih.gov/pubmed/20377412).
+6.  Lau LLH, Cowling BJ, Fang VJ, Chan KH, Lau EHY, Lipsitch M, Cheng CKY, Mouck PM, Uyeki TM, Peiris JSM, Leung GM. Viral shedding and clinical illness in naturally acquired influenza virus infections. *Journal of Infectious Diseases*, 2010; **201**(10):1509-16. [[link]](http://dx.doi.org/10.1086/652241) [[PubMed]](http://www.ncbi.nlm.nih.gov/pubmed/20377412).
 
-7.  Lau LLH, Ip DKM, Nishiura H, Fang VJ, Chan KH, Peiris JSM, Leung GM, Cowling BJ. Heterogeneity in viral shedding among individuals with medically attended influenza A virus infection. *Journal of Infectious Diseases*, 2013; **207**(8):1281–1285. [[link]](https://academic.oup.com/jid/article/207/8/1281/891314) [[Pubmed]](https://pubmed.ncbi.nlm.nih.gov/23382573/).
+7.  Lau LLH, Ip DKM, Nishiura H, Fang VJ, Chan KH, Peiris JSM, Leung GM, Cowling BJ. Heterogeneity in viral shedding among individuals with medically attended influenza A virus infection. *Journal of Infectious Diseases*, 2013; **207**(8):1281–1285. [[link]](https://academic.oup.com/jid/article/207/8/1281/891314) [[PubMed]](https://pubmed.ncbi.nlm.nih.gov/23382573/).
+
+8.  Cowling BJ, Ip DK, Fang VJ, Suntarattiwong P, Olsen SJ, Levy J, Uyeki TM, Leung GM, Peiris JS, Chotpitayasunondh T, Nishiura H, Simmerman JM. Aerosol transmission is an important mode of influenza A virus spread. *Nature Communications*. 2013; **4**:1935. [[link]](https://www.nature.com/articles/ncomms2922#MOESM153) [[PubMed]](https://pubmed.ncbi.nlm.nih.gov/23736803/).
+
+9.  Cowling BJ, Ip DK, Fang VJ, Suntarattiwong P, Olsen SJ, Levy J, Uyeki TM, Leung GM, Peiris JS, Chotpitayasunondh T, Nishiura H, Simmerman JM. Modes of transmission of influenza B virus in households. *PloS One*. 2014; **9**(9):e108850. [[link]](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0108850) [[PubMed]](https://pubmed.ncbi.nlm.nih.gov/25268241/).
 
 ## Acknowledgements
 
